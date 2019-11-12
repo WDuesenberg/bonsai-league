@@ -6,12 +6,19 @@ const bonsaiSchema = new Schema({
     type: String, 
     required: true 
   },
+  species:{
+    type: String,
+    required: true
+  },
   owner: { 
     type: String, 
     required: true 
   },
   description: {
     type: String
+  },
+  location: {
+    type: String,
   },
   date: { 
     type: Date, 
