@@ -10,9 +10,11 @@ import { Input, TextArea, FormBtn } from "../components/Form";
 class Bonsai extends Component {
   state = {
     trees: [],
-    title: "",
-    author: "",
-    synopsis: ""
+    name: "",
+    species: "",
+    owner: "",
+    description:"",
+    location: ""
   };
 
   componentDidMount() {

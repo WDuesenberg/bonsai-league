@@ -10,18 +10,10 @@ mongoose.connect(
 
 const bonsaiSeed = [
   {
-<<<<<<< HEAD
     name: "bad-ass tree of bad-assery",
     species: "bad-ass",
     owner: "Wyatt the bad-ass",
     description: 'refer to title'
-=======
-    name: "",
-    species: "",
-    owner: "",
-    description:"",
-    location: "",
->>>>>>> 7cfdc0da1a1ad1529c9215fbf2d9544dd654537f
     date: new Date(Date.now())
   },
     
