@@ -17,6 +17,9 @@ const bonsaiSchema = new Schema({
   description: {
     type: String
   },
+  location: {
+    type: String,
+  },
   date: { 
     type: Date, 
     default: Date.now 
