@@ -90,18 +90,18 @@ class Bonsai extends Component {
           </Col>
           <Col size="md-6 sm-12">
             <Jumbotron>
-              <h1>Bonsai On My List</h1>
+              <h1>Bonsai's On My List</h1>
             </Jumbotron>
             {this.state.treeSpecies.length ? (
               <List>
-                {this.state.treeSpecies.map(book => (
-                  <ListItem key={book._id}>
-                    <Link to={"/bonsais/" + book._id}>
+                {this.state.treeSpecies.map(bonsai => (
+                  <ListItem key={bonsai._id}>
+                    <Link to={"/bonsais/" + bonsai._id}>
                       <strong>
-                        {book.title} by {book.author}
+                        {bonsai.title} by {bonsai.author}
                       </strong>
                     </Link>
-                    <DeleteBtn onClick={() => this.deleteBonsai(book._id)} />
+                    <DeleteBtn onClick={() => this.deleteBonsai(bonsai._id)} />
                   </ListItem>
                 ))}
               </List>

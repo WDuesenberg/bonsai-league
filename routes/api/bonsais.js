@@ -1,16 +1,16 @@
 const router = require("express").Router();
-const treesController = require("../../controllers/bonsaiController");
+const bonsaiController = require("../../controllers/bonsaiController");
 
 // Matches with "/api/bonsais"
 router.route("/")
-  .get(treesController.findAll)
-  .post(treesController.create);
+  .get(bonsaiController.findAll)
+  .post(bonsaiController.create);
 
 // Matches with "/api/bonsais/:id"
 router
   .route("/:id")
-  .get(treesController.findById)
-  .put(treesController.update)
-  .delete(treesController.remove);
+  .get(bonsaiController.findById)
+  .put(bonsaiController.update)
+  .delete(bonsaiController.remove);
 
 module.exports = router;
