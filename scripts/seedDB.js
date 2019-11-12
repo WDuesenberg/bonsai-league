@@ -13,7 +13,7 @@ const bonsaiSeed = [
     name: "bad-ass tree of bad-assery",
     species: "bad-ass",
     owner: "Wyatt the bad-ass",
-    description: 'refer to title'
+    description: 'refer to title',
     date: new Date(Date.now())
   },
     
