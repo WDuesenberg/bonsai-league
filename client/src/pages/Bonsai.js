@@ -9,7 +9,7 @@ import { Input, TextArea, FormBtn } from "../components/Form";
 
 class Bonsai extends Component {
   state = {
-    treeSpecies: [],
+    trees: [],
     title: "",
     author: "",
     synopsis: ""
@@ -22,7 +22,7 @@ class Bonsai extends Component {
   loadBonsai = () => {
     API.getBonsai()
       .then(res =>
-        this.setState({ treeSpecies: res.data, title: "", author: "", synopsis: "" })
+        this.setState({ trees: res.data, title: "", author: "", synopsis: "" })
       )
       .catch(err => console.log(err));
   };
@@ -92,9 +92,9 @@ class Bonsai extends Component {
             <Jumbotron>
               <h1>Bonsai's On My List</h1>
             </Jumbotron>
-            {this.state.treeSpecies.length ? (
+            {this.state.trees.length ? (
               <List>
-                {this.state.treeSpecies.map(bonsai => (
+                {this.state.trees.map(bonsai => (
                   <ListItem key={bonsai._id}>
                     <Link to={"/bonsais/" + bonsai._id}>
                       <strong>
