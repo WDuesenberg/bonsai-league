@@ -10,10 +10,11 @@ mongoose.connect(
 
 const bonsaiSeed = [
   {
-    name: ,
-    species: ,
-    owner "Stephen King",
-    description:
+    name: "",
+    species: "",
+    owner: "",
+    description:"",
+    location: "",
     date: new Date(Date.now())
   },
     
