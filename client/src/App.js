@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Books from "./pages/Books";
+import Bonsai from "./pages/Bonsai";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
@@ -11,9 +11,9 @@ function App() {
       <>
         <Nav />
         <Switch>
-          <Route exact path="/" render={props => <Books {...props} day="Wednesday" />} />
-          <Route exact path="/books" component={Books} />
-          <Route exact path="/books/:id" component={Detail} />
+          <Route exact path="/" render={props => <Bonsai {...props} day="Wednesday" />} />
+          <Route exact path="/bonsais" component={Bonsai} />
+          <Route exact path="/boonsais/:id" component={Detail} />
           <Route component={NoMatch} />
         </Switch>
       </>
