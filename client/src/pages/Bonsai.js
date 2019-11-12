@@ -24,7 +24,7 @@ class Bonsai extends Component {
   loadBonsai = () => {
     API.getBonsai()
       .then(res =>
-        this.setState({ trees: res.data, title: "", author: "", synopsis: "" })
+        this.setState({ trees: res.data, name: "", species: "", owner: "", description: "", location: "", })
       )
       .catch(err => console.log(err));
   };
@@ -44,11 +44,13 @@ class Bonsai extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
-    if (this.state.title && this.state.author) {
+    if (this.state.name && this.state.species) {
       API.saveBonsai({
-        title: this.state.title,
-        author: this.state.author,
-        synopsis: this.state.synopsis
+        name: this.state.name,
+        species: this.state.species,
+        owner: this.state.owner,
+        description: this.state.description,
+        location: this.state.location
       })
         .then(res => this.loadBonsai())
         .catch(err => console.log(err));
@@ -65,22 +67,34 @@ class Bonsai extends Component {
             </Jumbotron>
             <form>
               <Input
-                value={this.state.title}
+                value={this.state.name}
                 onChange={this.handleInputChange}
-                name="title"
-                placeholder="Title (required)"
+                name="Name"
+                placeholder="Name (required)"
               />
               <Input
-                value={this.state.author}
+                value={this.state.species}
                 onChange={this.handleInputChange}
-                name="author"
-                placeholder="Author (required)"
+                name="Species"
+                placeholder="Species (required)"
+              />
+              <Input
+                value={this.state.owner}
+                onChange={this.handleInputChange}
+                name="Owner"
+                placeholder="Owner (Optional)"
               />
               <TextArea
-                value={this.state.synopsis}
+                value={this.state.description}
                 onChange={this.handleInputChange}
-                name="synopsis"
-                placeholder="Synopsis (Optional)"
+                name="Description"
+                placeholder="Description (Optional)"
+              />
+              <Input
+                value={this.state.location}
+                onChange={this.handleInputChange}
+                name="Location"
+                placeholder="Location (Optional)"
               />
               <FormBtn
                 disabled={!(this.state.author && this.state.title)}
@@ -100,7 +114,7 @@ class Bonsai extends Component {
                   <ListItem key={bonsai._id}>
                     <Link to={"/bonsais/" + bonsai._id}>
                       <strong>
-                        {bonsai.title} by {bonsai.author}
+                        {bonsai.name} by {bonsai.species}
                       </strong>
                     </Link>
                     <DeleteBtn onClick={() => this.deleteBonsai(bonsai._id)} />

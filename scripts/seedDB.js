@@ -3,23 +3,26 @@ const db = require("../models");
 
 // This file empties the Books collection and inserts the books below
 
-mongoose.connect(
-  process.env.MONGODB_URI ||
-  "mongodb://localhost/bonsai-league"
-);
+// mongoose.connect(
+//   process.env.MONGODB_URI ||
+//   "mongodb://localhost/bonsai-league"
+// );
 
 const bonsaiSeed = [
   {
-    name: "bad-ass tree of bad-assery",
-    species: "bad-ass",
-    owner: "Wyatt the bad-ass",
-    description: 'refer to title',
+    name: "awesome tree",
+    species: "dope",
+    owner: "Wyatt",
+    description:"bad-ass bonsai tree",
+    location: "your moms house",
     date: new Date(Date.now())
   },
     
 ];
 
-db.Bonsai
+module.exports=() => {
+
+  db.Bonsai
   .remove({})
   .then(() => db.Bonsai.collection.insertMany(bonsaiSeed))
   .then(data => {
@@ -30,3 +33,4 @@ db.Bonsai
     console.error(err);
     process.exit(1);
   });
+}
