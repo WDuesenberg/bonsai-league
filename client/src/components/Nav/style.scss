@@ -1,11 +1,12 @@
-$navColor: darkgreen;
+
 
 nav {
-    background: $navColor;
-};
-
-$navFont: whitesmoke;
-
-a {
-    color: $navFont;
+    a {
+        color: greenyellow;
+        padding: 10px 20px;
+    }
+    .navbar-brand {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 50px;
+    }
 };
