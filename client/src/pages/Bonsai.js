@@ -97,7 +97,7 @@ class Bonsai extends Component {
                 placeholder="Location (Optional)"
               />
               <FormBtn
-                disabled={!(this.state.author && this.state.title)}
+                disabled={!(this.state.species && this.state.name)}
                 onClick={this.handleFormSubmit}
               >
                 Submit Bonsai!

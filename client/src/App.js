@@ -13,7 +13,7 @@ function App() {
         <Switch>
           <Route exact path="/" render={props => <Bonsai {...props} day="Wednesday" />} />
           <Route exact path="/bonsais" component={Bonsai} />
-          <Route exact path="/boonsais/:id" component={Detail} />
+          <Route exact path="/bonsais/:id" component={Detail} />
           <Route component={NoMatch} />
         </Switch>
       </>
