@@ -1,5 +1,6 @@
 const express = require("express");
-
+const AWS = require("aws-sdk");
+const keys = require ("./keys");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
@@ -21,6 +22,18 @@ mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
+
+// AWS Shit
+AWS.config.update({
+ region: "us-east-1",
+ accessKeyId: process.env.AWSAccessKeyId || keys.s3accesskey,
+ secretAccessKey: process.env.AWSSecretKey || keys.s3secretaccesskey,
+});
+
+// Bucket
+const s3bucket = process.env.bucket || keys.s3bucket;
+console.log(s3bucket)
+
 require("./scripts/seedDB")();
 // Start the API server
 app.listen(PORT, function() {
