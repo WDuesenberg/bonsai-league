@@ -13,8 +13,8 @@ class Bonsai extends Component {
     name: "",
     species: "",
     owner: "",
-    description:"",
-    location: ""
+    location: "",
+    description:""
   };
 
   componentDidMount() {
@@ -24,7 +24,7 @@ class Bonsai extends Component {
   loadBonsai = () => {
     API.getBonsai()
       .then(res =>
-        this.setState({ trees: res.data, name: "", species: "", owner: "", description: "", location: "", })
+        this.setState({ trees: res.data, name: "", species: "", owner: "", location: "", description: "", })
       )
       .catch(err => console.log(err));
   };
@@ -49,8 +49,8 @@ class Bonsai extends Component {
         name: this.state.name,
         species: this.state.species,
         owner: this.state.owner,
-        description: this.state.description,
-        location: this.state.location
+        location: this.state.location,
+        description: this.state.description
       })
         .then(res => this.loadBonsai())
         .catch(err => console.log(err));
@@ -84,17 +84,17 @@ class Bonsai extends Component {
                 name="Owner"
                 placeholder="Owner (Optional)"
               />
-              <TextArea
-                value={this.state.description}
-                onChange={this.handleInputChange}
-                name="Description"
-                placeholder="Description (Optional)"
-              />
               <Input
                 value={this.state.location}
                 onChange={this.handleInputChange}
                 name="Location"
                 placeholder="Location (Optional)"
+              />
+              <TextArea
+                value={this.state.description}
+                onChange={this.handleInputChange}
+                name="Description"
+                placeholder="Description (Optional)"
               />
               <FormBtn
                 disabled={!(this.state.species && this.state.name)}
