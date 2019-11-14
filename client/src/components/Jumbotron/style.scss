@@ -1,4 +1,26 @@
 $jumboDiv: lightgreen;
+$center: center;
+
 div {
-    color: $jumboDiv;
+    .jumbotron {
+        background-color: $jumboDiv;
+        margin-top: 22px;
+    }
+
+    h1 {
+        font-family: monospace;
+        font-size: 30px;
+        color: whitesmoke;
+        letter-spacing: 2px;
+        text-shadow: black 3px 6px;
+    }
+
+    h3 {
+        font-family: monospace;
+        font-size: 20px;
+        color: black;
+        letter-spacing: 1.5px;
+        text-align: $center;
+    }
+
 };

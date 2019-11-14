@@ -1,0 +1,13 @@
+$formFont: monospace;
+
+div {
+    input {
+        font-family: $formFont;
+        text-align: center;
+    }
+    
+    textarea {
+        font-family: $formFont;
+        text-align: center;
+    }
+};
