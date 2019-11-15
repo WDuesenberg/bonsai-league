@@ -33,5 +33,18 @@ module.exports = {
       .then(dbModel => dbModel.remove())
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
+  },
+  S3FileUpload: function(req,res) {
+    db.Bonsai
+      .uploadFile(file, config)
+      .then(data => console.log(data))
+      .catch(err => console.error(err))
+  },
+  S3FileUpload: function(req,res) {
+    db.Bonsai
+      .deleteFile(file, config)
+      .then(data => console.log(data))
+      .catch(err => console.error(err))
   }
+
 };

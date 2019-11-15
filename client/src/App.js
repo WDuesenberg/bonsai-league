@@ -1,9 +1,11 @@
+// import React, { Component } from "react";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Bonsai from "./pages/Bonsai";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
+
 
 function App() {
   return (
@@ -22,3 +24,5 @@ function App() {
 }
 
 export default App;
+
+
