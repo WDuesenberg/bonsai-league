@@ -11,12 +11,12 @@ const config = {
     // dirName: 'photos', /*Optional*/
     region: 'us-east-1', /*'us-east-2'*/
     accessKeyId: process.env.REACT_APP_ACCESSKEY,
-    secretAccessKey: process.env.REACT_APP_SECRETACCESSKEY 
+    secretAccessKey: process.env.REACT_APP_SECRETACCESSKEY
 }
 
 
 class Home extends Component {
-    constructor(){
+    constructor() {
         super();
     }
 
@@ -24,25 +24,26 @@ class Home extends Component {
         console.log(e.target.files[0]);
         const file = e.target.files[0];
         S3FileUpload.uploadFile(file, config)
-        .then(data => console.log(data))
-        .catch(err => console.log(err))
-        
+            .then(data => console.log(data))
+            .catch(err => console.log(err))
+
     }
-    render(){
+    render() {
         return (
             <div>
+            <App />
                 <h3>
                     aws s3 upload
                 </h3>
-                <App/>
                 <input
-                type="file"
-                onChange={this.upload}
+                    type="file"
+                    onChange={this.upload}
                 />
             </div>
-        ); 
+        );
     }
 }
 
+ReactDOM.render(<App />, document.getElementById("root"));
 
-ReactDOM.render(<Home />, document.getElementById("root"));
+// ReactDOM.render(<Home />, document.getElementById("root"));
