@@ -40,12 +40,16 @@ class Bonsai extends Component {
   }
 
   loadBonsai = () => {
-    API.getBonsai()
-      .then(res =>
-        this.setState({ trees: [...this.state.trees,res.data], name: "", species: "", owner: "", location: "", description: "", })
-      )
+    API.getBonsais()
+      .then(res =>{
+        if (res.data){
+          this.setState({ trees: res.data, name: "", species: "", owner: "", location: "", description: "", })
+        }
+        console.log(this.state.trees)
+      })
       .catch(err => console.log(err));
-  };
+    };
+          
 
   deleteBonsai = id => {
     API.deleteBonsai(id)
@@ -136,6 +140,7 @@ class Bonsai extends Component {
             {this.state.trees.length ? (
               <List>
                 {this.state.trees.map(bonsai => (
+                  bonsai ? (
                   <ListItem key={bonsai._id}>
                     <Link to={"/bonsais/" + bonsai._id}>
                       <strong>
@@ -144,6 +149,9 @@ class Bonsai extends Component {
                     </Link>
                     <DeleteBtn onClick={() => this.deleteBonsai(bonsai._id)} />
                   </ListItem>
+                ):(
+                  <h3>No Trees Found</h3>
+                )
                 ))}
               </List>
             ) : (
