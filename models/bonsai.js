@@ -23,7 +23,10 @@ const bonsaiSchema = new Schema({
   date: {
     type: Date,
     default: Date.now
-  }
+  },
+  imageUrl: {
+    type: String,    
+  } 
 });
 
 const Bonsais = mongoose.model("Bonsais", bonsaiSchema);

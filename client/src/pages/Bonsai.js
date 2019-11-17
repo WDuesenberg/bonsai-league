@@ -24,7 +24,8 @@ class Bonsai extends Component {
     species: "",
     owner: "",
     location: "",
-    description:""
+    description:"",
+    imageUrl: ""
   };
   upload=(e) =>{
     console.log(e.target.files[0]);
@@ -43,7 +44,8 @@ class Bonsai extends Component {
     API.getBonsais()
       .then(res =>{
         if (res.data){
-          this.setState({ trees: res.data, name: "", species: "", owner: "", location: "", description: "", })
+          this.setState({ trees: res.data})
+          // this.setState({ trees: res.data, name: "", species: "", owner: "", location: "", description: "", imageUrl: "" })
         }
         console.log(this.state.trees)
       })
@@ -62,17 +64,21 @@ class Bonsai extends Component {
     this.setState({
       [name]: value
     });
+    console.log(this.state[name])
   };
 
   handleFormSubmit = event => {
     event.preventDefault();
+    console.log(this.state.name)
     if (this.state.name && this.state.species) {
+      console.log("submit button")
       API.saveBonsai({
         name: this.state.name,
         species: this.state.species,
         owner: this.state.owner,
         location: this.state.location,
-        description: this.state.description
+        description: this.state.description,
+        imageUrl: this.state.imageUrl
       })
         .then(res => this.loadBonsai())
         .catch(err => console.log(err));
@@ -96,37 +102,37 @@ class Bonsai extends Component {
                     onChange={this.upload}
                 />
               <Input
-                value={this.state.name}
+                // value={this.state.name}
                 onChange={this.handleInputChange}
-                name="Name"
+                name="name"
                 placeholder="Name (required)"
               />
               <Input
-                value={this.state.species}
+                // value={this.state.species}
                 onChange={this.handleInputChange}
-                name="Species"
+                name="species"
                 placeholder="Species (required)"
               />
               <Input
-                value={this.state.owner}
+                // value={this.state.owner}
                 onChange={this.handleInputChange}
-                name="Owner"
+                name="owner"
                 placeholder="Owner (Optional)"
               />
               <Input
-                value={this.state.location}
+                // value={this.state.location}
                 onChange={this.handleInputChange}
-                name="Location"
+                name="location"
                 placeholder="Location (Optional)"
               />
               <TextArea
-                value={this.state.description}
+                // value={this.state.description}
                 onChange={this.handleInputChange}
-                name="Description"
+                name="description"
                 placeholder="Description (Optional)"
               />
               <FormBtn
-                disabled={!(this.state.species && this.state.name)}
+                // disabled={!(this.state.species && this.state.name)}
                 onClick={this.handleFormSubmit}
               >
                 Submit Bonsai!
