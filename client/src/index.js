@@ -34,6 +34,7 @@ class Home extends Component {
                 <h3>
                     aws s3 upload
                 </h3>
+                <App/>
                 <input
                 type="file"
                 onChange={this.upload}
