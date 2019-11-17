@@ -25,7 +25,7 @@ class Bonsai extends Component {
   loadBonsai = () => {
     API.getBonsai()
       .then(res =>
-        this.setState({ trees: res.data, name: "", species: "", owner: "", location: "", description: "", })
+        this.setState({ trees: [...this.state.trees,res.data], name: "", species: "", owner: "", location: "", description: "", })
       )
       .catch(err => console.log(err));
   };
