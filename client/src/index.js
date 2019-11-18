@@ -2,23 +2,22 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import ReactS3 from "react-s3";
+// import ReactS3 from "react-s3";
 import S3FileUpload from "react-s3/lib/ReactS3";
 
 
 const config = {
     bucketName: "bonsai-league",
-    // dirName: 'photos', /*Optional*/
-    region: 'us-east-1', /*'us-east-2'*/
+    region: 'us-east-1',
     accessKeyId: process.env.REACT_APP_ACCESSKEY,
     secretAccessKey: process.env.REACT_APP_SECRETACCESSKEY
 }
 
 
 class Home extends Component {
-    constructor() {
-        super();
-    }
+    // constructor() {
+        // super();
+    // }
 
     upload(e) {
         console.log(e.target.files[0]);

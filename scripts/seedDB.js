@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const db = require("../models");
 
-// This file empties the Books collection and inserts the books below
+// This file empties the Bonsai collection and inserts the bonsais below
 
 // mongoose.connect(
 //   process.env.MONGODB_URI ||
@@ -10,11 +10,12 @@ const db = require("../models");
 
 const bonsaiSeed = [
   {
-    name: "awesome tree",
-    species: "dope",
-    owner: "Wyatt",
-    description:"bad-ass bonsai tree",
-    location: "your moms house",
+    name: "My First Bonsai",
+    owner: "John Smith",
+    species: "Juniper (Juniperus)",
+    location: "Denver, CO",
+    description:"This is my first bonsai tree. It's still just a baby put with proper care and nurturing, I hope to help it grow into a beautiful, healthy and happy bonsai.",
+    imageURL: "",
     date: new Date(Date.now())
   },
     

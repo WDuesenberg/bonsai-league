@@ -21,8 +21,8 @@ class Bonsai extends Component {
   state = {
     trees: [],
     name: "",
-    species: "",
     owner: "",
+    species: "",
     location: "",
     description:"",
     imageUrl: ""
@@ -74,8 +74,8 @@ class Bonsai extends Component {
       console.log("submit button")
       API.saveBonsai({
         name: this.state.name,
-        species: this.state.species,
         owner: this.state.owner,
+        species: this.state.species,
         location: this.state.location,
         description: this.state.description,
         imageUrl: this.state.imageUrl
@@ -110,26 +110,26 @@ class Bonsai extends Component {
               <Input
                 // value={this.state.species}
                 onChange={this.handleInputChange}
-                name="species"
-                placeholder="Species (required)"
+                name="owner"
+                placeholder="Owner (required)"
               />
               <Input
                 // value={this.state.owner}
                 onChange={this.handleInputChange}
-                name="owner"
-                placeholder="Owner (Optional)"
+                name="species"
+                placeholder="Species (optional)"
               />
               <Input
                 // value={this.state.location}
                 onChange={this.handleInputChange}
                 name="location"
-                placeholder="Location (Optional)"
+                placeholder="Location (optional)"
               />
               <TextArea
                 // value={this.state.description}
                 onChange={this.handleInputChange}
                 name="description"
-                placeholder="Description (Optional)"
+                placeholder="Description (optional)"
               />
               <FormBtn
                 // disabled={!(this.state.species && this.state.name)}
