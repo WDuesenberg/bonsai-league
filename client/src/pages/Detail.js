@@ -24,8 +24,9 @@ class Detail extends Component {
           <Col size="md-12">
             <Jumbotron>
               <h1>
-                {this.state.tree.name} by {this.state.tree.species}
+                {this.state.tree.name} by {this.state.tree.owner}
               </h1>
+              <img>{this.state.tree.imageURL}</img>
             </Jumbotron>
           </Col>
         </Row>

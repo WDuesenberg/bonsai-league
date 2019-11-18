@@ -91,16 +91,16 @@ class Bonsai extends Component {
         <Row>
           <Col size="md-6">
             <Jumbotron>
-              <h1>What Bonsai Should I See?</h1>
+              <h1>Add your bonsai tree</h1>
             </Jumbotron>
             <form>
             <h3>
-                    Bonsai Image Upload
-                </h3>
-                <input
-                    type="file"
-                    onChange={this.upload}
-                />
+              Bonsai Image Upload
+            </h3>
+              <Input
+                type="file"
+                onChange={this.upload}
+              />
               <Input
                 // value={this.state.name}
                 onChange={this.handleInputChange}
@@ -150,7 +150,7 @@ class Bonsai extends Component {
                   <ListItem key={bonsai._id}>
                     <Link to={"/bonsais/" + bonsai._id}>
                       <strong>
-                        {bonsai.name} by {bonsai.species}
+                        {bonsai.name} by {bonsai.owner}
                       </strong>
                     </Link>
                     <DeleteBtn onClick={() => this.deleteBonsai(bonsai._id)} />
