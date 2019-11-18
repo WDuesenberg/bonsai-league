@@ -97,7 +97,7 @@ class Bonsai extends Component {
             <h3>
               Bonsai Image Upload
             </h3>
-              <Input
+              <input
                 type="file"
                 onChange={this.upload}
               />
@@ -117,7 +117,7 @@ class Bonsai extends Component {
                 // value={this.state.owner}
                 onChange={this.handleInputChange}
                 name="species"
-                placeholder="Species (optional)"
+                placeholder="Species (required)"
               />
               <Input
                 // value={this.state.location}

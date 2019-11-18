@@ -3,10 +3,6 @@ const db = require("../models");
 
 // This file empties the Bonsai collection and inserts the bonsais below
 
-// mongoose.connect(
-//   process.env.MONGODB_URI ||
-//   "mongodb://localhost/bonsai-league"
-// );
 
 const bonsaiSeed = [
   {

@@ -9,12 +9,12 @@ class Detail extends Component {
     tree: {}
   };
   // Add code to get the book with an _id equal to the id in the route param
-  // e.g. http://localhost:3000/books/:id
-  // The book id for this route can be accessed using this.props.match.params.id
-  componentDidMount () {
+  // e.g. http://localhost:3000/bonsais/:id
+  // The bonsai id for this route can be accessed using this.props.match.params.id
+  componentDidMount() {
     API.getBonsai(this.props.match.params.id)
-        .then(res => this.setState({ tree: res.data }))
-        .catch(err => console.log(err));
+      .then(res => this.setState({ tree: res.data }))
+      .catch(err => console.log(err));
   }
 
   render() {
@@ -23,10 +23,7 @@ class Detail extends Component {
         <Row>
           <Col size="md-12">
             <Jumbotron>
-              <h1>
-                {this.state.tree.name} by {this.state.tree.owner}
-              </h1>
-              <img>{this.state.tree.imageURL}</img>
+              <h1>{this.state.tree.name} by {this.state.tree.owner}</h1>
             </Jumbotron>
           </Col>
         </Row>
