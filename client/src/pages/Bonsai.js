@@ -30,8 +30,9 @@ class Bonsai extends Component {
   upload=(e) =>{
     console.log(e.target.files[0]);
     const file = e.target.files[0];
+    console.log(file.name)
     S3FileUpload.uploadFile(file, config)
-        .then(data => console.log(data))
+        .then(data => this.setState({imageUrl: file.name}))
         .catch(err => console.log(err))
 
 }
