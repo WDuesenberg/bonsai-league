@@ -11,7 +11,7 @@ const bonsaiSeed = [
     species: "Juniper (Juniperus)",
     location: "Denver, CO",
     description:"This is my first bonsai tree. It's still just a baby put with proper care and nurturing, I hope to help it grow into a beautiful, healthy and happy bonsai.",
-    imageURL: "",
+    imageUrl: "trident-3.jpg",
     date: new Date(Date.now())
   },
     
