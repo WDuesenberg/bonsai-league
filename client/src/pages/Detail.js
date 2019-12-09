@@ -24,6 +24,7 @@ class Detail extends Component {
           <Col size="md-12">
             <Jumbotron>
               <h1>{this.state.tree.name} by {this.state.tree.owner}</h1>
+              <img src={'https://bonsai-league.s3.amazonaws.com/' + this.state.tree.imageUrl} alt={this.state.tree.name}/>
             </Jumbotron>
           </Col>
         </Row>
