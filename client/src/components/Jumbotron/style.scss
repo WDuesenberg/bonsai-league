@@ -6,6 +6,7 @@ div {
         background-color: $jumboDiv;
         margin-top: 12px;
         text-align: $center;
+        padding: 40px 22px 44px
     }
 
     h1 {
@@ -18,7 +19,7 @@ div {
 
     h3 {
         font-family: monospace;
-        font-size: 20px;
+        font-size: calc(2vh + 1.3vw);
         color: black;
         letter-spacing: 1.5px;
         text-align: $center;

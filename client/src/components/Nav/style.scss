@@ -1,19 +1,21 @@
 $navBack: darkolivegreen;
 
 nav {
-    text-align: center;
     background: $navBack;
     margin-top: 12px;
+    text-align: center;
     
     a {
         padding: 12px 18px;
         background: $navBack;
     }
-
+    
     .navbar-brand {
-        text-align: center;
+        margin-left: 27%;
+        margin-right: 27%;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: calc(8vh + 4vw);
+        color: whitesmoke;
         letter-spacing: 3px;
         text-shadow: black 4px 10px;
     }

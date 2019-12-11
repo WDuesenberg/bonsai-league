@@ -1,10 +1,17 @@
 $formFont: monospace;
 
 div {
+
     input {
         font-family: $formFont;
         text-align: center;
+        background-color: palegreen;
     }
+    
+    button, input {
+        background-color: greenyellow;
+    }
+        
     
     textarea {
         font-family: $formFont;
