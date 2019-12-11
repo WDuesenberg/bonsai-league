@@ -1,9 +1,15 @@
+.list-group-item {
+  background-color: seagreen;
+}
+
+
 .list-overflow-container {
   max-height: 545px;
-  border: 1px #DDDDDD solid;
+  border: 3px goldenrod groove;
   border-radius: 4px;
   overflow-y: scroll;
   overflow-x: hidden;
+  text-align: center;
 }
 
 .list-overflow-container ul {
@@ -21,15 +27,17 @@
 }
 
 .list-overflow-container li a {
-  font-family: monospace;
-  color: darkgreen;
-  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 2px;
+  color: whitesmoke;
+  font-size: calc(1.6vh + 1.1vw);
+  text-shadow: lawngreen 2px 3px;
 }
 
 .list-overflow-container li:first-child {
-  border-top: none;
+  border-top: 15px;
 }
 
 .list-overflow-container li:last-child {
-  border-bottom: none;
+  border-bottom: 15px;
 }

@@ -8,7 +8,7 @@ class Detail extends Component {
   state = {
     tree: {}
   };
-  // Add code to get the book with an _id equal to the id in the route param
+  // Add code to get the bonsai with an _id equal to the id in the route param
   // e.g. http://localhost:3000/bonsais/:id
   // The bonsai id for this route can be accessed using this.props.match.params.id
   componentDidMount() {

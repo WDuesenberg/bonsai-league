@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Bonsai from "./pages/Bonsai";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
+import Blog from "./pages/Blog";
 import Nav from "./components/Nav";
 
 
