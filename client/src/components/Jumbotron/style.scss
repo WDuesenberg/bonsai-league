@@ -8,7 +8,7 @@ div {
         margin-top: 27px;
         margin-bottom: 42px;
         text-align: $center;
-        padding: 30px 22px 23px
+        padding: 30px 14px 21px
     }
 
     h1 {
@@ -21,13 +21,13 @@ div {
 
     h3 {
         font-family: $font;
-        font-size: calc(2.2vh + 1.5vw);
+        font-size: calc(2.3vh + 1.6vw);
         color: seagreen;
         text-shadow: lightgray 3px 6px;
         letter-spacing: 1.5px;
         text-align: $center;
         margin-top: 13%;
-        margin-bottom: 15%;
+        margin-bottom: 17%;
     }
 
     .description {
@@ -49,6 +49,7 @@ div {
         color: rgb(71, 38, 38);
         font-size: calc(1.2vh + 1vw);
         margin-bottom: 7%;
+        padding: 2px 24px 2px;
     }
 
     a {
