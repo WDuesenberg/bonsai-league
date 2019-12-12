@@ -1,5 +1,6 @@
 $jumboDiv: olive;
 $center: center;
+$font: 'Bungee Inline', cursive;
 
 div {
     .jumbotron {
@@ -11,7 +12,7 @@ div {
     }
 
     h1 {
-        font-family: monospace;
+        font-family: $font;
         font-size: calc(3vh + 2vw);
         color: whitesmoke;
         letter-spacing: 2px;
@@ -19,7 +20,7 @@ div {
     }
 
     h3 {
-        font-family: monospace;
+        font-family: $font;
         font-size: calc(2vh + 1.3vw);
         color: seagreen;
         text-shadow: lightgray 3px 6px;
@@ -44,7 +45,7 @@ div {
     }
 
     p {
-        font-family: monospace;
+        font-family: $font;
         color: mediumseagreen;
         font-size: calc(1.2vh + 1vw);
         margin-bottom: 7%;
