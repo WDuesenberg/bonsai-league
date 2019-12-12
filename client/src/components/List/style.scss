@@ -2,18 +2,16 @@
   background-color: seagreen;
 }
 
-
 .list-overflow-container {
   max-height: 545px;
-  border: 3px goldenrod groove;
-  border-radius: 4px;
+  border: 4px goldenrod groove;
+  border-radius: 9px;
   overflow-y: scroll;
   overflow-x: hidden;
   text-align: center;
 }
 
 .list-overflow-container ul {
-  object-fit: cover;
   margin: 0;
 }
 
@@ -25,14 +23,15 @@
 
 .list-overflow-container li * {
   cursor: pointer;
+  
 }
 
 .list-overflow-container li a {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   color: whitesmoke;
   font-size: calc(1.6vh + 1.1vw);
-  text-shadow: lawngreen 2px 3px;
+  text-shadow: darkgreen 2px 4px;
 }
 
 .list-overflow-container li:first-child {

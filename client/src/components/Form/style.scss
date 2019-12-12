@@ -5,7 +5,7 @@ div {
     input {
         font-family: $formFont;
         text-align: center;
-        // background-color: palegreen;
+        color: darkgreen;
     }
     
     // button, input {
@@ -19,9 +19,12 @@ div {
     }
     
     button {
-        background: limegreen;
+        font-size: calc(2vh + 1.2vw);
+        background: seagreen;
         font-family: $formFont;
-        color: whitesmoke;
+        color: goldenrod;
+        margin-left: 30%;
+        border-radius: 9px;
 
     }
 
