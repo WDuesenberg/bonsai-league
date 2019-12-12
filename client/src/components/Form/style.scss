@@ -8,9 +8,9 @@ div {
         // background-color: palegreen;
     }
     
-    button, input {
-        // background-color: greenyellow;
-    }
+    // button, input {
+    //     // background-color: greenyellow;
+    // }
         
     
     textarea {
@@ -26,11 +26,11 @@ div {
     }
 
     img {
-        float: right;
+        float: center;
         width: 50%;
         height: 45vw;
-        margin-top: 10%;
-        margin-bottom: 12%;
+        margin-top: 8%;
+        margin-bottom: 8%;
         border: 18px groove goldenrod;
     }
 };

@@ -1,4 +1,4 @@
-$jumboDiv: lightgreen;
+$jumboDiv: olive;
 $center: center;
 
 div {
@@ -7,7 +7,7 @@ div {
         margin-top: 27px;
         margin-bottom: 42px;
         text-align: $center;
-        padding: 40px 22px 44px
+        padding: 30px 22px 23px
     }
 
     h1 {
@@ -27,8 +27,23 @@ div {
         text-align: $center;
     }
 
+    .description {
+        color: seagreen;
+        text-shadow: lightgray 3px 6px;
+        margin-left: 20px;
+        margin-right: 50%;
+        margin-bottom: 5%;
+    }
+
     article {
-        display: inline;
+        float: center;
+        text-align: center;
+    }
+
+    p {
+        font-family: monospace;
+        font-size: calc(1.2vh + 1vw);
+        margin-bottom: 15%;
     }
 
 };
