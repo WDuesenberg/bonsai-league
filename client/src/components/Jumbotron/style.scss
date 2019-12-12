@@ -30,20 +30,29 @@ div {
     .description {
         color: seagreen;
         text-shadow: lightgray 3px 6px;
-        margin-left: 20px;
-        margin-right: 50%;
+        margin-left: 27%;
+        margin-right: 27%;
         margin-bottom: 5%;
     }
 
     article {
         float: center;
         text-align: center;
+
     }
 
     p {
         font-family: monospace;
+        color: mediumseagreen;
         font-size: calc(1.2vh + 1vw);
-        margin-bottom: 15%;
+        margin-bottom: 7%;
+    }
+
+    a {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: calc(1.6vh + 1.1vw);
+        color: gold;
+        text-shadow: limegreen 1px 2px;
     }
 
 };
