@@ -1,6 +1,6 @@
 $jumboDiv: olive;
 $center: center;
-$font: 'Bungee Inline', cursive;
+$font: 'Shojumaru', cursive;
 
 div {
     .jumbotron {
@@ -45,14 +45,14 @@ div {
     }
 
     p {
-        font-family: $font;
-        color: mediumseagreen;
+        font-family: 'Carter One', cursive;
+        color: rgb(71, 38, 38);
         font-size: calc(1.2vh + 1vw);
         margin-bottom: 7%;
     }
 
     a {
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: $font;
         font-size: calc(1.6vh + 1.1vw);
         color: gold;
         text-shadow: limegreen 1px 2px;
