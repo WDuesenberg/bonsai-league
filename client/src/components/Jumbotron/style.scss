@@ -16,18 +16,18 @@ div {
         font-size: calc(3vh + 2vw);
         color: whitesmoke;
         letter-spacing: 2px;
-        text-shadow: black 3px 6px;
+        text-shadow: rgb(54, 37, 37) 4px 8px;
     }
 
     h3 {
         font-family: $font;
-        font-size: calc(2vh + 1.3vw);
+        font-size: calc(2.2vh + 1.5vw);
         color: seagreen;
         text-shadow: lightgray 3px 6px;
         letter-spacing: 1.5px;
         text-align: $center;
-        margin-top: 60px;
-        margin-bottom: 50px;
+        margin-top: 13%;
+        margin-bottom: 15%;
     }
 
     .description {
