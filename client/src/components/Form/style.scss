@@ -21,10 +21,13 @@ div {
     button {
         font-size: calc(2vh + 1.2vw);
         background: seagreen;
-        font-family: $formFont;
-        color: goldenrod;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: whitesmoke;
+        letter-spacing: 3px;
+        text-shadow: darkgreen 2px 4px;
         margin-left: 30%;
         border-radius: 9px;
+        border: 4px goldenrod groove;
 
     }
 
