@@ -2,8 +2,10 @@ $navBack: darkolivegreen;
 
 nav {
     background: $navBack;
-    margin-top: 12px;
+    margin-top: 16px;
     text-align: center;
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 12px 28px 0 rgba(0, 0, 0, 0.19);
+
     
     a {
         padding: 12px 18px;
