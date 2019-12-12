@@ -31,7 +31,7 @@ class Detail extends Component {
         <Row>
           <Col size="md-10 md-offset-1">
             <article>
-              <h1>Description</h1>
+              <h1 class="description">Description</h1>
               <p>{this.state.tree.description}</p>
             </article>
           </Col>

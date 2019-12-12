@@ -5,11 +5,11 @@ div {
     input {
         font-family: $formFont;
         text-align: center;
-        background-color: palegreen;
+        // background-color: palegreen;
     }
     
     button, input {
-        background-color: greenyellow;
+        // background-color: greenyellow;
     }
         
     
@@ -26,11 +26,12 @@ div {
     }
 
     img {
+        float: right;
         width: 50%;
         height: 45vw;
-        margin-top: 15%;
-        margin-bottom: 25px;
-        border: 5px groove olivedrab;
+        margin-top: 10%;
+        margin-bottom: 12%;
+        border: 18px groove goldenrod;
     }
 };
 
