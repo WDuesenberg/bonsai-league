@@ -92,7 +92,7 @@ class Bonsai extends Component {
         <Row>
           <Col size="md-6">
             <Jumbotron>
-              <h1>Add your Bonsai tree</h1>
+              <h1>Add your Bonsai</h1>
             </Jumbotron>
             <form>
             <h3>
