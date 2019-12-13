@@ -142,7 +142,7 @@ class Bonsai extends Component {
           </Col>
           <Col size="md-6 sm-12">
             <Jumbotron>
-              <h1>The leagues Bonsai's</h1>
+              <h1>Our Users Bonsai</h1>
             </Jumbotron>
             {this.state.trees.length ? (
               <List>
