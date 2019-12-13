@@ -3,7 +3,7 @@ import "./style.scss";
 
 function Nav() {
   return (
-    <nav className="navbar" href="/">
+    <nav className="navbar navbar-expand-lg" href="/">
       <a className="navbar-brand" href="/">
         Bonsai League
       </a>
